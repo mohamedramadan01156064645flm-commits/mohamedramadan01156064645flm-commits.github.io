@@ -98,12 +98,11 @@ export const projects: Project[] = [
     emoji: '💼',
     category: 'ml',
     tag: 'Machine Learning',
-    name: '3awatly — AI Job Matching',
+    name: '3awatly — AI Job Finder',
     description:
       'A job-matching web application where users upload their CV and receive job offers matched to their resume. Built as a practical AI-assisted hiring workflow with a modern web interface and live deployment.',
     tech: ['Next.js', 'React', 'Google Gemini', 'Supabase'],
     github: 'https://github.com/mohamedramadan01156064645flm-commits/3watly-app',
-    demo: 'https://3watly-app.vercel.app/',
   },
   {
     emoji: '🍔',

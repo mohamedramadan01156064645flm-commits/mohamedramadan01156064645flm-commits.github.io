@@ -216,15 +216,6 @@ const TECH_STACK: TechItem[] = [
     color: '#a855f7',
     projectsUsed: 'Computer Science Fundamentals',
   },
-  {
-    name: '3awatly Stack',
-    category: 'deploy',
-    role: 'AI Web Application Development',
-    level: 'Production Ready',
-    IconComponent: FastApiFlaticon,
-    color: '#10b981',
-    projectsUsed: '3awatly CV Job Matching Platform',
-  },
 ];
 
 const CATEGORIES = [
@@ -380,24 +371,6 @@ export function Skills(): JSX.Element {
 
             </div>
           ))}
-        </div>
-
-        {/* ── Summary Stats Banner (Responsive Grid) ── */}
-        <div className={`mt-10 sm:mt-14 max-w-[1100px] mx-auto rounded-2xl border p-5 sm:p-6 grid grid-cols-1 sm:grid-cols-3 gap-5 text-center transition-colors ${
-          theme === 'dark' ? 'bg-[#04091e]/60 border-white/10' : 'bg-white border-slate-200 shadow-sm'
-        }`}>
-          <div>
-            <div className="font-mono text-2xl sm:text-3xl font-black text-[#38bdf8]">93.2%</div>
-            <div className={`text-xs font-semibold mt-0.5 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Model Peak Accuracy</div>
-          </div>
-          <div>
-            <div className="font-mono text-2xl sm:text-3xl font-black text-[#a855f7]">101</div>
-            <div className={`text-xs font-semibold mt-0.5 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Food-101 Classes</div>
-          </div>
-          <div>
-            <div className="font-mono text-2xl sm:text-3xl font-black text-[#10b981]">3</div>
-            <div className={`text-xs font-semibold mt-0.5 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Live Project Demos</div>
-          </div>
         </div>
 
       </div>

@@ -57,7 +57,7 @@ function FoodVisionFlaticon({ color }: { color: string }) {
 
 const PROJECT_ICONS: Record<string, React.ComponentType<{ color: string }>> = {
   "Axon: Alzheimer's Detection": BrainMriFlaticon,
-  '3awatly — AI Job Matching': ChurnAnalyticsFlaticon,
+  '3awatly — AI Job Finder': ChurnAnalyticsFlaticon,
   'Food Image Classifier': FoodVisionFlaticon,
 };
 
@@ -176,6 +176,24 @@ export function Projects(): JSX.Element {
               </article>
             );
           })}
+        </div>
+
+        {/* ── Summary Stats Banner (Responsive Grid) ── */}
+        <div className={`mt-10 sm:mt-14 max-w-[1200px] mx-auto rounded-2xl border p-5 sm:p-6 grid grid-cols-1 sm:grid-cols-3 gap-5 text-center transition-colors ${
+          theme === 'dark' ? 'bg-[#04091e]/60 border-white/10' : 'bg-white border-slate-200 shadow-sm'
+        }`}>
+          <div>
+            <div className="font-mono text-2xl sm:text-3xl font-black text-[#38bdf8]">93.2%</div>
+            <div className={`text-xs font-semibold mt-0.5 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Model Peak Accuracy</div>
+          </div>
+          <div>
+            <div className="font-mono text-2xl sm:text-3xl font-black text-[#a855f7]">101</div>
+            <div className={`text-xs font-semibold mt-0.5 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Food-101 Classes</div>
+          </div>
+          <div>
+            <div className="font-mono text-2xl sm:text-3xl font-black text-[#10b981]">3</div>
+            <div className={`text-xs font-semibold mt-0.5 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Live Project Demos</div>
+          </div>
         </div>
       </div>
     </section>

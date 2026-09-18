@@ -14,7 +14,7 @@ export function Navbar(): JSX.Element {
       const scrollPos = window.scrollY;
       setScrolled(scrollPos > 20);
 
-      const sections = ['hero', 'about', 'skills', 'projects', 'experience'];
+      const sections = ['hero', 'about', 'skills', 'experience', 'projects'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
@@ -34,8 +34,8 @@ export function Navbar(): JSX.Element {
   const navItems = [
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Skills', href: '#skills', id: 'skills' },
-    { label: 'Projects', href: '#projects', id: 'projects' },
     { label: 'Experience', href: '#experience', id: 'experience' },
+    { label: 'Projects', href: '#projects', id: 'projects' },
   ];
 
   return (
